@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title> Лабораторна робота - Завдання 2 </title>
+</head>
+<body>
+
+  <h2>Додавання нового запису </h2>
+
+  <form id="addForm">
+    <label>
+      Назва:
+      <input type="text" id="nameInput" required>
+    </label>
+    
+    <label>
+      Категорія:
+      <input type="text" id="categoryInput" required>
+    </label>
+    
+    <label>
+      Ціна:
+      <input type="number" id="priceInput" min="0" step="0.05" required>
+    </label>
+
+    <button type="submit"> Додати </button>
+  </form>
+
+  <hr>
+
+  <h2> Таблиця даних </h2>
+
+  <table border="1" id="dataTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Назва</th>
+        <th>Категорія</th>
+        <th>Ціна (в грн)</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Початкові дані -->
+      <tr>
+        <td>1</td>
+        <td>Ноутбук</td>
+        <td>Електроніка</td>
+        <td>25000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
